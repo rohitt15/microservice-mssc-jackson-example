@@ -1,10 +1,12 @@
 package com.developer.msscjackson.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -23,4 +25,7 @@ public class BeerDto {
 
 	private OffsetDateTime createdDate;
 	private OffsetDateTime lastUpdatedDate;
+
+	@JsonSerialize(using = LocalDateSerializer.class)
+	private LocalDate localDate;
 }
