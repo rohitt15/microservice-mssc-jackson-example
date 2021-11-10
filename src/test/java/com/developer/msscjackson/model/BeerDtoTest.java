@@ -27,7 +27,7 @@ class BeerDtoTest extends BestTest{
     @Test
     void testDeSerialize() throws JsonProcessingException {
 
-        String json="{\"id\":\"6aebe84e-a1ff-498e-ab3c-ca6bb5f8b907\",\"beerName\":\"BeerName\",\"beerStyle\":\"ALA\",\"upc\":123123123123,\"createdDate\":\"2021-11-09T17:35:47.28+05:30\",\"lastUpdatedDate\":\"2021-11-09T17:35:47.28+05:30\"}";
+        String json="{\"id\":\"525a5a28-2ba8-4412-8253-3abcedf28eac\",\"beer_name\":\"BeerName\",\"beer_style\":\"ALA\",\"upc\":123123123123,\"created_date\":\"2021-11-10T12:41:07.456+05:30\",\"last_updated_date\":\"2021-11-10T12:41:07.456+05:30\",\"local_date\":\"20211110\"}";
 
         BeerDto dto=objectMapper.readValue(json,BeerDto.class);
 
